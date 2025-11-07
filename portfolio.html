@@ -1,0 +1,448 @@
+ <!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="D-Broft Technologies Portfolio - Explore our successful digital projects, websites, SEO campaigns, and design work. See how we transform businesses.">
+   <meta name="keywords" content="D-Broft Technologies portfolio, web development projects, SEO case studies, digital marketing results, design portfolio Uganda">
+   <meta name="author" content="D-Broft Technologies">
+   <meta name="robots" content="index, follow">
+   
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://dbroft.vercel.app/portfolio.html">
+   <meta property="og:title" content="Portfolio - Our Digital Success Stories | D-Broft Technologies">
+   <meta property="og:description" content="Discover our portfolio of successful digital projects. From stunning websites to powerful SEO campaigns, see how we deliver results.">
+   <meta property="og:image" content="https://dbroft.vercel.app/assets/img/logo.jpg">
+   
+   <link rel="canonical" href="https://dbroft.vercel.app/portfolio.html">
+   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+   <link href="./assets/css/main.css" rel="stylesheet">
+   <link href="./assets/css/components.css" rel="stylesheet">
+   <link href="./assets/css/animations.css" rel="stylesheet">
+   
+   <title>Portfolio - Our Digital Success Stories | D-Broft Technologies</title>
+  </head>
+  <body>
+   <nav class="navbar" id="navbar">
+    <div class="nav-container">
+     <div class="nav-brand">
+      <img src="./assets/img/logo.jpg" alt="D-Broft Technologies Logo" class="nav-logo">
+      <span class="nav-title">D-Broft Technologies</span>
+     </div>
+     
+     <div class="nav-menu" id="nav-menu">
+      <a href="./" class="nav-link">Home</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./services.html" class="nav-link">Services</a>
+      <a href="./portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+      <a href="./reviews.html" class="nav-link">Reviews</a>
+     </div>
+     
+     <div class="nav-actions">
+      <a href="./contact.html" class="btn btn-primary">Get Started</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+       <span></span>
+       <span></span>
+       <span></span>
+      </button>
+     </div>
+    </div>
+   </nav>
+
+   <main>
+    <section class="hero hero-portfolio">
+     <div class="container">
+      <div class="hero-content">
+       <h1 class="hero-title animate-fade-up">Our <span class="text-gradient">Portfolio</span></h1>
+       <p class="hero-description animate-fade-up delay-1">
+        Explore our collection of successful digital projects and see how we've helped businesses transform their online presence and achieve remarkable results.
+       </p>
+       <div class="portfolio-stats animate-fade-up delay-2">
+        <div class="stat">
+         <span class="stat-number" data-counter="100">0</span>
+         <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+         <span class="stat-number" data-counter="50">0</span>
+         <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat">
+         <span class="stat-number" data-counter="95">0</span>
+         <span class="stat-label">% Success Rate</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section class="portfolio-filter">
+     <div class="container">
+      <div class="filter-tabs animate-on-scroll">
+       <button class="filter-btn active" data-filter="all">All Projects</button>
+       <button class="filter-btn" data-filter="web">Web Development</button>
+       <button class="filter-btn" data-filter="seo">SEO & Marketing</button>
+       <button class="filter-btn" data-filter="design">Design</button>
+       <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+     </div>
+    </section>
+
+    <section class="portfolio-grid">
+     <div class="container">
+      <div class="projects-grid">
+       <div class="project-card animate-on-scroll" data-category="web design" data-delay="0">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="E-commerce Platform" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project1">View Details</button>
+           <a href="#" class="btn btn-primary btn-small" target="_blank">Live Site</a>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-primary">E-commerce</span>
+          <span class="badge badge-secondary">Responsive</span>
+         </div>
+         <h3 class="project-title">Modern E-commerce Platform</h3>
+         <p class="project-description">A fully responsive e-commerce website with advanced features, payment integration, and optimized user experience.</p>
+         <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Payment API</span>
+         </div>
+        </div>
+       </div>
+
+       <div class="project-card animate-on-scroll" data-category="seo" data-delay="100">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="SEO Campaign Results" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project2">View Results</button>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-success">SEO</span>
+          <span class="badge badge-warning">Analytics</span>
+         </div>
+         <h3 class="project-title">Local Business SEO Success</h3>
+         <p class="project-description">Achieved 300% increase in organic traffic and first-page rankings for competitive keywords in 6 months.</p>
+         <div class="project-results">
+          <div class="result-item">
+           <span class="result-number">300%</span>
+           <span class="result-label">Traffic Increase</span>
+          </div>
+          <div class="result-item">
+           <span class="result-number">15</span>
+           <span class="result-label">Top Rankings</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <div class="project-card animate-on-scroll" data-category="design branding" data-delay="200">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="Brand Identity Design" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project3">View Brand</button>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-primary">Branding</span>
+          <span class="badge badge-secondary">Logo Design</span>
+         </div>
+         <h3 class="project-title">Complete Brand Identity</h3>
+         <p class="project-description">Comprehensive brand identity including logo design, color palette, typography, and brand guidelines.</p>
+         <div class="project-deliverables">
+          <span>Logo Design</span>
+          <span>Brand Guidelines</span>
+          <span>Marketing Materials</span>
+         </div>
+        </div>
+       </div>
+
+       <div class="project-card animate-on-scroll" data-category="web" data-delay="300">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="Corporate Website" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project4">View Details</button>
+           <a href="#" class="btn btn-primary btn-small" target="_blank">Live Site</a>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-primary">Corporate</span>
+          <span class="badge badge-secondary">CMS</span>
+         </div>
+         <h3 class="project-title">Corporate Website Redesign</h3>
+         <p class="project-description">Modern, professional website with content management system and improved user experience design.</p>
+         <div class="project-features">
+          <span>Content Management</span>
+          <span>Mobile Responsive</span>
+          <span>SEO Optimized</span>
+         </div>
+        </div>
+       </div>
+
+       <div class="project-card animate-on-scroll" data-category="seo" data-delay="400">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="Digital Marketing Campaign" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project5">View Campaign</button>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-success">Marketing</span>
+          <span class="badge badge-warning">Social Media</span>
+         </div>
+         <h3 class="project-title">Multi-Channel Marketing Campaign</h3>
+         <p class="project-description">Integrated digital marketing campaign across multiple channels resulting in significant ROI improvement.</p>
+         <div class="project-metrics">
+          <div class="metric-item">
+           <span class="metric-number">250%</span>
+           <span class="metric-label">ROI Increase</span>
+          </div>
+          <div class="metric-item">
+           <span class="metric-number">5K</span>
+           <span class="metric-label">New Leads</span>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <div class="project-card animate-on-scroll" data-category="design" data-delay="500">
+        <div class="project-image">
+         <img src="./assets/img/logo.jpg" alt="UI/UX Design" loading="lazy">
+         <div class="project-overlay">
+          <div class="project-actions">
+           <button class="btn btn-secondary btn-small" data-modal="project6">View Design</button>
+          </div>
+         </div>
+        </div>
+        <div class="project-info">
+         <div class="project-tags">
+          <span class="badge badge-primary">UI/UX</span>
+          <span class="badge badge-secondary">Mobile App</span>
+         </div>
+         <h3 class="project-title">Mobile App UI/UX Design</h3>
+         <p class="project-description">User-centered design for mobile application with focus on usability and modern aesthetics.</p>
+         <div class="project-highlights">
+          <span>User Research</span>
+          <span>Wireframing</span>
+          <span>Prototyping</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <section class="testimonials-preview">
+     <div class="container">
+      <div class="section-header">
+       <h2 class="section-title animate-on-scroll">What Our <span class="text-gradient">Clients Say</span></h2>
+       <p class="section-description animate-on-scroll">
+        Real feedback from real clients who've experienced our digital transformation services
+       </p>
+      </div>
+      
+      <div class="testimonials-grid">
+       <div class="testimonial-card animate-on-scroll" data-delay="0">
+        <div class="testimonial-content">
+         <div class="testimonial-rating">
+          <span>★★★★★</span>
+         </div>
+         <p>"D-Broft Technologies transformed our online presence completely. Our website traffic increased by 400% and we're getting more qualified leads than ever before."</p>
+        </div>
+        <div class="testimonial-author">
+         <div class="author-avatar">
+          <img src="./assets/img/dev.jpeg" alt="Sarah Johnson">
+         </div>
+         <div class="author-info">
+          <h4>Sarah Johnson</h4>
+          <span>CEO, TechStart Uganda</span>
+         </div>
+        </div>
+       </div>
+       
+       <div class="testimonial-card animate-on-scroll" data-delay="100">
+        <div class="testimonial-content">
+         <div class="testimonial-rating">
+          <span>★★★★★</span>
+         </div>
+         <p>"Professional, reliable, and results-driven. Their SEO work helped us rank #1 for our main keywords. Highly recommended!"</p>
+        </div>
+        <div class="testimonial-author">
+         <div class="author-avatar">
+          <img src="./assets/img/dev.jpeg" alt="Michael Chen">
+         </div>
+         <div class="author-info">
+          <h4>Michael Chen</h4>
+          <span>Marketing Director, GrowthCo</span>
+         </div>
+        </div>
+       </div>
+       
+       <div class="testimonial-card animate-on-scroll" data-delay="200">
+        <div class="testimonial-content">
+         <div class="testimonial-rating">
+          <span>★★★★★</span>
+         </div>
+         <p>"The team's creativity and technical expertise exceeded our expectations. Our new brand identity perfectly captures our vision."</p>
+        </div>
+        <div class="testimonial-author">
+         <div class="author-avatar">
+          <img src="./assets/img/dev.jpeg" alt="Emma Wilson">
+         </div>
+         <div class="author-info">
+          <h4>Emma Wilson</h4>
+          <span>Founder, Creative Studio</span>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+      <div class="testimonials-cta animate-on-scroll">
+       <a href="./reviews.html" class="btn btn-secondary">Read All Reviews</a>
+      </div>
+     </div>
+    </section>
+
+    <section class="cta">
+     <div class="container">
+      <div class="cta-content animate-on-scroll">
+       <h2 class="cta-title">Ready to Join Our Success Stories?</h2>
+       <p class="cta-description">
+        Let's create your next digital success story. Contact us today to discuss your project and see how we can help you achieve your goals.
+       </p>
+       <div class="cta-actions">
+        <a href="./contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+        <a href="./services.html" class="btn btn-secondary btn-large">View Services</a>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+
+   <!-- Project Modals -->
+   <div class="modal-overlay" id="project1">
+    <div class="modal">
+     <div class="modal-header">
+      <h3 class="modal-title">E-commerce Platform Project</h3>
+      <button class="modal-close">&times;</button>
+     </div>
+     <div class="modal-body">
+      <img src="./assets/img/logo.jpg" alt="Project Details" class="modal-image">
+      <h4>Project Overview</h4>
+      <p>A comprehensive e-commerce solution built from the ground up with modern technologies and user-centered design principles.</p>
+      <h4>Key Features</h4>
+      <ul>
+       <li>Responsive design for all devices</li>
+       <li>Secure payment processing</li>
+       <li>Inventory management system</li>
+       <li>SEO-optimized structure</li>
+       <li>Performance optimization</li>
+      </ul>
+      <h4>Results</h4>
+      <p>The platform achieved a 45% increase in conversion rates and 60% improvement in page load speeds compared to the previous solution.</p>
+     </div>
+     <div class="modal-footer">
+      <a href="./contact.html" class="btn btn-primary">Start Similar Project</a>
+     </div>
+    </div>
+   </div>
+
+   <footer class="footer">
+    <div class="container">
+     <div class="footer-content">
+      <div class="footer-section">
+       <div class="footer-brand">
+        <img src="./assets/img/logo.jpg" alt="D-Broft Technologies" class="footer-logo">
+        <h3>D-Broft Technologies</h3>
+        <p>Transforming businesses through innovative digital solutions</p>
+       </div>
+       <div class="footer-social">
+        <a href="https://facebook.com/dbrofttech" target="_blank" rel="noopener" aria-label="Facebook">
+         <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+         </svg>
+        </a>
+        <a href="https://twitter.com/dbrofttech" target="_blank" rel="noopener" aria-label="Twitter">
+         <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+         </svg>
+        </a>
+        <a href="https://instagram.com/dbrofttech" target="_blank" rel="noopener" aria-label="Instagram">
+         <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+         </svg>
+        </a>
+        <a href="https://linkedin.com/company/dbroft-technologies" target="_blank" rel="noopener" aria-label="LinkedIn">
+         <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+         </svg>
+        </a>
+       </div>
+      </div>
+      
+      <div class="footer-section">
+       <h4>Quick Links</h4>
+       <ul class="footer-links">
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+       </ul>
+      </div>
+      
+      <div class="footer-section">
+       <h4>Services</h4>
+       <ul class="footer-links">
+        <li><a href="./services.html#seo">SEO Services</a></li>
+        <li><a href="./services.html#marketing">Digital Marketing</a></li>
+        <li><a href="./services.html#web">Web Development</a></li>
+        <li><a href="./services.html#design">Graphics Design</a></li>
+       </ul>
+      </div>
+      
+      <div class="footer-section">
+       <h4>Resources</h4>
+       <ul class="footer-links">
+        <li><a href="./reviews.html">Client Reviews</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./terms.html">Terms & Conditions</a></li>
+        <li><a href="./social.html">Social Media</a></li>
+       </ul>
+      </div>
+     </div>
+     
+     <div class="footer-bottom">
+      <p>&copy; 2025 D-Broft Technologies. All rights reserved.</p>
+      <p>Contact: <a href="mailto:droft.tech@gmail.com">droft.tech@gmail.com</a> | <a href="tel:+256740453150">+256-740453150</a></p>
+     </div>
+    </div>
+   </footer>
+
+   <script src="./assets/js/main.js"></script>
+   <script src="./assets/js/components.js"></script>
+   <script src="./assets/js/animations.js"></script>
+  </body>
+ </html>

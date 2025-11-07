@@ -1,0 +1,103 @@
+ {
+  "name": "D-Broft Technologies - Complete Digital Solutions Provider",
+  "short_name": "D-Broft Tech",
+  "description": "Transform your business with our innovative digital solutions. Expert web development, SEO, digital marketing, and design services in Uganda.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "technology", "productivity"],
+  "icons": [
+   {
+    "src": "assets/img/favicon.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any maskable"
+   },
+   {
+    "src": "assets/img/favicon.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+   },
+   {
+    "src": "assets/img/logo.jpg",
+    "sizes": "144x144",
+    "type": "image/jpeg",
+    "purpose": "any"
+   }
+  ],
+  "screenshots": [
+   {
+    "src": "assets/img/logo.jpg",
+    "sizes": "1280x720",
+    "type": "image/jpeg",
+    "form_factor": "wide",
+    "label": "D-Broft Technologies Homepage"
+   },
+   {
+    "src": "assets/img/logo.jpg",
+    "sizes": "750x1334",
+    "type": "image/jpeg",
+    "form_factor": "narrow",
+    "label": "D-Broft Technologies Mobile View"
+   }
+  ],
+  "shortcuts": [
+   {
+    "name": "Our Services",
+    "short_name": "Services",
+    "description": "View our digital services",
+    "url": "/services.html",
+    "icons": [
+     {
+      "src": "assets/img/favicon.png",
+      "sizes": "96x96"
+     }
+    ]
+   },
+   {
+    "name": "Portfolio",
+    "short_name": "Portfolio",
+    "description": "View our work",
+    "url": "/portfolio.html",
+    "icons": [
+     {
+      "src": "assets/img/favicon.png",
+      "sizes": "96x96"
+     }
+    ]
+   },
+   {
+    "name": "Contact Us",
+    "short_name": "Contact",
+    "description": "Get in touch",
+    "url": "/contact.html",
+    "icons": [
+     {
+      "src": "assets/img/favicon.png",
+      "sizes": "96x96"
+     }
+    ]
+   }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+   "preferred_width": 400
+  },
+  "launch_handler": {
+   "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+   {
+    "protocol": "mailto",
+    "url": "/contact.html?email=%s"
+   }
+  ]
+ }
