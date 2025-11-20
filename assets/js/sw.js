@@ -32,7 +32,9 @@
   '/reviews.html',
   '/faq.html',
   '/terms.html',
-  '/social.html'
+  '/social.html',
+  '/services.html',
+  '/portfolio.html'
  ];
 
 // Network-first resources (always try network first)

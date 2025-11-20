@@ -26,7 +26,7 @@
    <link rel="canonical" href="https://dbroft.vercel.app/reviews.html">
    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
    <link rel="apple-touch-icon" href="./assets/img/favicon.png">
-   <link rel="manifest" href="manifest.json">
+   <link rel="manifest" href="./manifest.json">
    
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,13 +57,47 @@
        "@type": "Person",
        "name": "Sarah Johnson"
       },
+      "reviewRating": {
+       "@type": "Rating",
+       "ratingValue": "5"
+      },
+      "reviewBody": "D-Broft Technologies transformed our online presence completely. Their SEO expertise increased our website traffic by 300% in just 3 months."
+     }
+    ]
+   }
+   </script>
+
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C004P0LS3F"></script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C004P0LS3F');
+   </script>
+  </head>
+  <body>
+   <nav class="navbar">
+    <div class="container">
+     <div class="nav-brand">
+      <img src="./assets/img/logo.jpg" alt="D-Broft Technologies" class="nav-logo">
+      <span class="nav-title">D-Broft Technologies</span>
+     </div>
+     <div class="nav-menu" id="navMenu">
+      <a href="./" class="nav-link">Home</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./services.html" class="nav-link">Services</a>
+      <a href="./portfolio.html" class="nav-link">Portfolio</a>
+      <a href="./reviews.html" class="nav-link active">Reviews</a>
+      <a href="./faq.html" class="nav-link">FAQ</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+     </div>
+     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
      </button>
     </div>
-   </div>
-  </nav>
+   </nav>
 
   <main>
    <section class="hero hero-reviews">
@@ -77,23 +111,14 @@
        <div class="stat-item">
         <div class="stat-number">4.9</div>
         <div class="stat-label">Average Rating</div>
-       <h1 class="hero-title animate-fade-up">Client Reviews & Testimonials</h1>
-       <p class="hero-subtitle animate-fade-up" style="animation-delay: 0.2s;">
-        Discover what our clients say about working with D-Broft Technologies. Real stories, real results, real satisfaction.
-       </p>
-       <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s;">
-        <div class="stat-item">
-         <div class="stat-number">4.9</div>
-         <div class="stat-label">Average Rating</div>
-        </div>
-        <div class="stat-item">
-         <div class="stat-number">127</div>
-         <div class="stat-label">Total Reviews</div>
-        </div>
-        <div class="stat-item">
-         <div class="stat-number">98%</div>
-         <div class="stat-label">Satisfaction Rate</div>
-        </div>
+       </div>
+       <div class="stat-item">
+        <div class="stat-number">127</div>
+        <div class="stat-label">Total Reviews</div>
+       </div>
+       <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Satisfaction Rate</div>
        </div>
       </div>
      </div>

@@ -488,23 +488,38 @@
    submitBtn.disabled = true;
    submitBtn.innerHTML = '<span class="loading"></span> Sending...';
    
-// Simulate form submission (replace with actual submission logic)
-   setTimeout(() => {
-// Reset button
+// Create FormData from form
+   const formData = new FormData(form);
+   
+// Submit to Formspree
+   fetch('https://formspree.io/f/xpwwojqa', {
+    method: 'POST',
+    body: formData,
+    headers: {
+     'Accept': 'application/json'
+    }
+   })
+   .then(response => {
+    if (response.ok) {
+     submitBtn.disabled = false;
+     submitBtn.textContent = originalText;
+     this.showFormMessage(form, 'Thank you! Your message has been sent. We will contact you shortly.', 'success');
+     form.reset();
+     
+// Track event
+     if (typeof dbroft !== 'undefined') {
+      dbroft.trackEvent('Form', 'Submit', form.id || 'Contact Form');
+     }
+    } else {
+     throw new Error('Form submission failed');
+    }
+   })
+   .catch(error => {
     submitBtn.disabled = false;
     submitBtn.textContent = originalText;
-    
-// Show success message
-    this.showFormMessage(form, 'Thank you! Your message has been sent.', 'success');
-    
-// Reset form
-    form.reset();
-    
-// Track event
-    if (typeof dbroft !== 'undefined') {
-     dbroft.trackEvent('Form', 'Submit', form.id || 'Contact Form');
-    }
-   }, 2000);
+    this.showFormMessage(form, 'Error sending message. Please try again or contact us directly.', 'error');
+    console.error('Form submission error:', error);
+   });
   },
   
   showFormMessage(form, message, type = 'info') {
