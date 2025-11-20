@@ -186,7 +186,7 @@
    }
    
 // Add click handlers to navigation links
-   const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+   const navLinks = document.querySelectorAll('.nav-link');
    navLinks.forEach(link => {
     link.addEventListener('click', this.handleNavLinkClick.bind(this));
    });
@@ -196,7 +196,12 @@
   handleNavLinkClick(event) {
    const href = event.target.getAttribute('href');
    
-// Only handle hash links
+   // Close mobile menu if open (for all nav clicks)
+   if (this.isMenuOpen) {
+    this.closeMobileMenu();
+   }
+   
+   // Only handle hash links with scroll
    if (href && href.startsWith('#')) {
     event.preventDefault();
     const targetId = href.substring(1);
@@ -205,12 +210,7 @@
     if (targetElement) {
      this.scrollToElement(targetElement);
      
-// Close mobile menu if open
-     if (this.isMenuOpen) {
-      this.closeMobileMenu();
-     }
-     
-// Update active link
+     // Update active link
      this.setActiveNavLink(event.target);
     }
    }

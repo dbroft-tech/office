@@ -76,13 +76,14 @@
    </script>
   </head>
   <body>
-   <nav class="navbar">
-    <div class="container">
+   <nav class="navbar" id="navbar">
+    <div class="nav-container">
      <div class="nav-brand">
       <img src="./assets/img/logo.jpg" alt="D-Broft Technologies" class="nav-logo">
       <span class="nav-title">D-Broft Technologies</span>
      </div>
-     <div class="nav-menu" id="navMenu">
+     
+     <div class="nav-menu" id="nav-menu">
       <a href="./" class="nav-link">Home</a>
       <a href="./about.html" class="nav-link">About</a>
       <a href="./services.html" class="nav-link">Services</a>
@@ -91,11 +92,15 @@
       <a href="./faq.html" class="nav-link">FAQ</a>
       <a href="./contact.html" class="nav-link">Contact</a>
      </div>
-     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-     </button>
+     
+     <div class="nav-actions">
+      <a href="./contact.html" class="btn btn-primary">Get Started</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+       <span></span>
+       <span></span>
+       <span></span>
+      </button>
+     </div>
     </div>
    </nav>
 
@@ -122,25 +127,26 @@
        </div>
       </div>
      </div>
-    </section>
+    </div>
+   </section>
 
-    <section class="reviews-filter">
-     <div class="container">
-      <div class="filter-tabs">
-       <button class="filter-btn active" data-filter="all">All Reviews</button>
-       <button class="filter-btn" data-filter="seo">SEO Services</button>
-       <button class="filter-btn" data-filter="web">Web Development</button>
-       <button class="filter-btn" data-filter="design">Design</button>
-       <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
-       <button class="filter-btn" data-filter="branding">Branding</button>
-      </div>
+   <section class="reviews-filter">
+    <div class="container">
+     <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All Reviews</button>
+      <button class="filter-btn" data-filter="seo">SEO Services</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
      </div>
-    </section>
+    </div>
+   </section>
 
-    <section class="reviews-grid">
-     <div class="container">
-      <div class="reviews-container">
-       <div class="review-card animate-fade-up" data-category="seo">
+   <section class="reviews-grid">
+    <div class="container">
+     <div class="reviews-container">
+      <div class="review-card animate-fade-up" data-category="seo">
         <div class="review-header">
          <div class="reviewer-info">
           <div class="reviewer-avatar">SJ</div>
@@ -352,69 +358,70 @@
        <button class="btn btn-outline load-more-btn">Load More Reviews</button>
       </div>
      </div>
-    </section>
+    </div>
+   </section>
 
-    <section class="review-stats">
-     <div class="container">
-      <h2 class="section-title">Review Statistics</h2>
-      <div class="stats-grid">
-       <div class="stat-card">
-        <div class="stat-chart">
-         <div class="rating-bar">
-          <span class="rating-label">5 Stars</span>
-          <div class="bar-container">
-           <div class="bar-fill" style="width: 89%"></div>
-          </div>
-          <span class="rating-count">113</span>
+   <section class="review-stats">
+    <div class="container">
+     <h2 class="section-title">Review Statistics</h2>
+     <div class="stats-grid">
+      <div class="stat-card">
+       <div class="stat-chart">
+        <div class="rating-bar">
+         <span class="rating-label">5 Stars</span>
+         <div class="bar-container">
+          <div class="bar-fill" style="width: 89%"></div>
          </div>
-         <div class="rating-bar">
-          <span class="rating-label">4 Stars</span>
-          <div class="bar-container">
-           <div class="bar-fill" style="width: 8%"></div>
-          </div>
-          <span class="rating-count">10</span>
+         <span class="rating-count">113</span>
+        </div>
+        <div class="rating-bar">
+         <span class="rating-label">4 Stars</span>
+         <div class="bar-container">
+          <div class="bar-fill" style="width: 8%"></div>
          </div>
-         <div class="rating-bar">
-          <span class="rating-label">3 Stars</span>
-          <div class="bar-container">
-           <div class="bar-fill" style="width: 2%"></div>
-          </div>
-          <span class="rating-count">3</span>
+         <span class="rating-count">10</span>
+        </div>
+        <div class="rating-bar">
+         <span class="rating-label">3 Stars</span>
+         <div class="bar-container">
+          <div class="bar-fill" style="width: 2%"></div>
          </div>
-         <div class="rating-bar">
-          <span class="rating-label">2 Stars</span>
-          <div class="bar-container">
-           <div class="bar-fill" style="width: 1%"></div>
-          </div>
-          <span class="rating-count">1</span>
+         <span class="rating-count">3</span>
+        </div>
+        <div class="rating-bar">
+         <span class="rating-label">2 Stars</span>
+         <div class="bar-container">
+          <div class="bar-fill" style="width: 1%"></div>
          </div>
-         <div class="rating-bar">
-          <span class="rating-label">1 Star</span>
-          <div class="bar-container">
-           <div class="bar-fill" style="width: 0%"></div>
-          </div>
-          <span class="rating-count">0</span>
+         <span class="rating-count">1</span>
+        </div>
+        <div class="rating-bar">
+         <span class="rating-label">1 Star</span>
+         <div class="bar-container">
+          <div class="bar-fill" style="width: 0%"></div>
          </div>
+         <span class="rating-count">0</span>
+        </div>
         </div>
        </div>
       </div>
      </div>
     </section>
 
-    <section class="cta-section">
-     <div class="container">
-      <div class="cta-content">
-       <h2 class="cta-title">Ready to Join Our Success Stories?</h2>
-       <p class="cta-description">
-        Experience the same exceptional service that our clients rave about. Let's create your success story together.
-       </p>
-       <div class="cta-buttons">
-        <a href="./contact.html" class="btn btn-primary">Start Your Project</a>
-        <a href="./services.html" class="btn btn-outline">View Our Services</a>
-       </div>
+   <section class="cta-section">
+    <div class="container">
+     <div class="cta-content">
+      <h2 class="cta-title">Ready to Join Our Success Stories?</h2>
+      <p class="cta-description">
+       Experience the same exceptional service that our clients rave about. Let's create your success story together.
+      </p>
+      <div class="cta-buttons">
+       <a href="./contact.html" class="btn btn-primary">Start Your Project</a>
+       <a href="./services.html" class="btn btn-outline">View Our Services</a>
       </div>
      </div>
-    </section>
+    </div>
+   </section>
    </main>
 
    <footer class="footer">
@@ -456,7 +463,7 @@
       </div>
      </div>
      <div class="footer-bottom">
-      <p>&copy; 2024 D-Broft Technologies. All rights reserved.</p>
+      <p>&copy; 2025 D-Broft Technologies. All rights reserved.</p>
       <div class="footer-links">
        <a href="./terms.html">Terms of Service</a>
        <a href="./contact.html">Privacy Policy</a>
