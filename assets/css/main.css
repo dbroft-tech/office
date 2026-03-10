@@ -3,13 +3,13 @@
 
 /* CSS Custom Properties */
  :root {
-/* Colors */
-  --primary: #0ea5e9;
-  --primary-dark: #0284c7;
-  --primary-light: #38bdf8;
-  --accent: #FFD700;
-  --accent-dark: #DAA520;
-  --accent-light: #FFE55C;
+/* Colors - D-Broft Brand Colors */
+  --primary: #418af2;
+  --primary-dark: #28446c;
+  --primary-light: #6da8f5;
+  --accent: #e0aa26;
+  --accent-dark: #c49020;
+  --accent-light: #f0c84e;
   --success: #10b981;
   --warning: #f59e0b;
   --error: #ef4444;
@@ -165,10 +165,7 @@
  .text-right { text-align: right; }
 
  .text-gradient {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
  }
 
  .sr-only {
@@ -219,8 +216,8 @@
  }
 
  .nav-logo {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: var(--radius-lg);
   object-fit: cover;
  }
@@ -305,7 +302,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
   margin-top: -70px;
   padding-top: 70px;
  }
@@ -419,8 +416,8 @@
 
  .hero-image-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
  }
 
  .hero-image {
@@ -714,35 +711,35 @@
 
 /* Page-specific Hero Styles */
  .hero-about {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-services {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-portfolio {
-  background: linear-gradient(135deg, #fefce8 0%, #fef3c7 50%, #fefce8 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-contact {
-  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fdf2f8 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-reviews {
-  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 50%, #f5f3ff 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-faq {
-  background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 50%, #fff7ed 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-terms {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
  .hero-social {
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #ecfdf5 100%);
+  background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
  }
 
 /* About Page Styles */
@@ -765,10 +762,7 @@
  .story-text h2 {
   font-size: var(--text-4xl);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--gray-900), var(--primary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-dark);
   margin-bottom: var(--space-8);
   letter-spacing: -0.5px;
  }
@@ -791,11 +785,11 @@
 
  .story-visual {
   position: relative;
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(65, 138, 242, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%);
   padding: 0;
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
-  border: 2px solid rgba(14, 165, 233, 0.15);
+  border: 2px solid rgba(65, 138, 242, 0.15);
   overflow: hidden;
  }
 
@@ -811,7 +805,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 4px 15px rgba(65, 138, 242, 0.4);
   z-index: 10;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -881,17 +875,17 @@
   transform: scale(1.05);
  }
 
-/* Chief Officer Styling */
+/* Chief Officer Styling - consistent with team members */
  .team-chief {
   position: relative;
-  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%);
+  background: var(--white);
   border: 2px solid var(--primary);
-  box-shadow: 0 0 20px rgba(14, 165, 233, 0.15), var(--shadow-lg);
+  box-shadow: var(--shadow-lg);
  }
 
  .team-chief:hover {
-  box-shadow: 0 0 30px rgba(14, 165, 233, 0.25), var(--shadow-2xl);
-  border-color: var(--accent);
+  box-shadow: var(--shadow-2xl);
+  border-color: var(--primary-dark);
  }
 
  .chief-badge {
@@ -899,7 +893,7 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: var(--primary);
   color: var(--white);
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-full);
@@ -915,21 +909,19 @@
   width: 140px;
   height: 140px;
   border-color: var(--primary);
-  box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
  }
 
  .team-chief:hover .member-image img {
-  border-color: var(--accent);
-  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+  border-color: var(--primary-dark);
  }
 
  .team-chief .member-name {
   font-size: var(--text-2xl);
-  color: var(--primary);
+  color: var(--primary-dark);
  }
 
  .team-chief .member-role {
-  color: var(--accent);
+  color: var(--primary);
   font-weight: 700;
  }
 
@@ -1695,7 +1687,7 @@
  left: 0;
  right: 0;
  bottom: 0;
- background: linear-gradient(135deg, rgba(14, 165, 233, 0.9), rgba(255, 215, 0, 0.8));
+ background: linear-gradient(135deg, rgba(65, 138, 242, 0.9), rgba(255, 215, 0, 0.8));
  display: flex;
  align-items: center;
  justify-content: center;
@@ -2247,7 +2239,7 @@
 .input-field:focus {
  outline: none;
  border-color: var(--primary);
- box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+ box-shadow: 0 0 0 3px rgba(65, 138, 242, 0.15);
  transform: translateY(-1px);
 }
 
@@ -2984,7 +2976,7 @@ select.input-field {
  .search-input:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+  box-shadow: 0 0 0 3px rgba(65, 138, 242, 0.15);
  }
 
  .search-btn {
@@ -4000,3 +3992,10 @@ select.input-field {
    font-size: var(--text-xs);
   }
  }
+
+/* Vision/Mission responsive grid */
+@media (max-width: 768px) {
+ .vision-mission-grid {
+  grid-template-columns: 1fr !important;
+ }
+}
