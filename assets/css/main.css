@@ -1643,8 +1643,8 @@
 
 .projects-grid {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
- gap: var(--space-8);
+ grid-template-columns: repeat(4, 1fr);
+ gap: var(--space-6);
  margin-top: var(--space-12);
 }
 
@@ -3516,8 +3516,8 @@ select.input-field {
   
   /* Portfolio responsive styles */
   .projects-grid {
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   gap: var(--space-6);
+   grid-template-columns: repeat(3, 1fr);
+   gap: var(--space-5);
   }
   
   .portfolio-stats {
@@ -3615,8 +3615,8 @@ select.input-field {
   
   /* Portfolio responsive styles for 768px */
   .projects-grid {
-   grid-template-columns: 1fr;
-   gap: var(--space-6);
+   grid-template-columns: repeat(2, 1fr);
+   gap: var(--space-4);
   }
   
   .portfolio-stats {
@@ -3823,6 +3823,11 @@ select.input-field {
   }
   
   /* Portfolio responsive styles for 480px */
+  .projects-grid {
+   grid-template-columns: 1fr;
+   gap: var(--space-4);
+  }
+  
   .portfolio-stats {
    gap: var(--space-3);
   }
