@@ -720,6 +720,9 @@
 
  .hero-portfolio {
   background: linear-gradient(135deg, #eef4fe 0%, #dbeafe 50%, #eef4fe 100%);
+  min-height: auto;
+  padding: var(--space-16) 0 var(--space-8);
+  margin-top: 0;
  }
 
  .hero-contact {
