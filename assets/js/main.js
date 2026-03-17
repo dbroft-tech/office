@@ -20,6 +20,7 @@
    this.initNavigation();
    this.initSmoothScroll();
    this.initPerformanceOptimizations();
+   this.initPortfolioFilter();
    console.log('D-Broft Technologies website initialized');
   },
   
@@ -501,6 +502,54 @@
    setTimeout(() => {
     errorDiv.remove();
    }, 5000);
+  },
+
+// Initialize portfolio filter functionality
+  initPortfolioFilter() {
+   const filterButtons = document.querySelectorAll('.filter-btn');
+   const projectCards = document.querySelectorAll('.project-card');
+   
+   if (!filterButtons.length || !projectCards.length) return;
+   
+   filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+     const filter = button.dataset.filter;
+     
+     // Update active button state
+     filterButtons.forEach(btn => btn.classList.remove('active'));
+     button.classList.add('active');
+     
+     // Filter projects
+     projectCards.forEach(card => {
+      const category = card.dataset.category;
+      
+      if (filter === 'all' || category === filter) {
+       card.style.display = '';
+       card.style.opacity = '0';
+       card.style.transform = 'scale(0.95)';
+       
+       // Animate in
+       setTimeout(() => {
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1)';
+       }, 50);
+      } else {
+       card.style.opacity = '0';
+       card.style.transform = 'scale(0.95)';
+       
+       setTimeout(() => {
+        card.style.display = 'none';
+       }, 300);
+      }
+     });
+     
+     // Track filter event
+     if (typeof dbroft !== 'undefined') {
+      this.trackEvent('Portfolio', 'Filter', filter);
+     }
+    });
+   });
   }
  };
 
